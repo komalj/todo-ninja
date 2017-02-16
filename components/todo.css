@@ -1,0 +1,110 @@
+
+
+#mainHeader {
+  height: 80px;
+  display: flex;
+  align-items: center;
+  font-size: 35px;
+  font-style: italic;
+  margin-left: 20px;
+}
+
+.theGrid {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.newNoteButton {
+  width: 300px;
+  height: 300px;
+  margin: 10px;
+  font-size: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+  background-color: #f2f2f2
+}
+
+.noteBody {
+  width: 300px;
+  height: 300px;
+  background-color: #ffff66;
+  margin: 10px;
+  padding: 7px;
+  box-sizing: border-box;
+  overflow: scroll;
+}
+
+.noteHead {
+  display: flex;
+  justify-content: flex-end;
+  color: #595959;
+  cursor: pointer;
+}
+
+.deleteButton {
+  cursor: pointer;
+  font-size: 13px;
+}
+
+.todoText {
+  font-size: 18px;
+  margin-bottom: 5px;
+  word-break: break-all;
+}
+
+.completed {
+  color: #a6a6a6;
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  font-size: 20px;
+}
+
+li {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  color: #8c8c8c;
+}
+
+input.noteTopic  {
+  color: #595959;
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+input.newItem {
+  font-size: 18px;
+  margin: 5px;
+}
+
+input.noteTopic {
+  text-align: left;
+  margin: 5px;
+}
+
+form.newItem  {
+  display: flex;
+  justify-content: center;
+  margin-top: 8px;
+}
+
+input {
+  outline: none;
+  background-color: inherit;
+  border: none;
+  text-align: center;
+  color: #595959;
+}
+
+.completed input{
+  text-decoration: line-through;
+  color: #8c8c8c;
+}
