@@ -17,5 +17,3 @@ render(
   </Provider>,
   document.getElementById("container")
 );
-
-git

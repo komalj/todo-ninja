@@ -15,6 +15,9 @@ export default class Note extends React.Component {
     e.preventDefault();
     const noteID = this.props.note.id;
     const text = this.inputElement.value;
+
+    if(text=="") return;
+
     this.props.addItem(noteID, text);
     this.inputElement.value = '';
   }
@@ -31,7 +34,7 @@ export default class Note extends React.Component {
           <span className="deleteNoteButton" onClick={this.deleteNote.bind(this)}> &#10005; </span>
         </div>
         <form className="noteTopic" onSubmit={this.updateTopic.bind(this)}>
-          <input ref={a => this.topicElement = a} className="noteTopic" defaultValue={this.props.note.topic} onBlur={this.updateTopic.bind(this)} />
+          <input ref={a => this.topicElement = a} className="noteTopic" placeholder="Topic" defaultValue={this.props.note.topic} onBlur={this.updateTopic.bind(this)} />
         </form>
         <form className="newItem" onSubmit={this.addItem.bind(this)}>
           <input ref={a => this.inputElement = a} className="newItem" placeholder="add todo" />

@@ -3,8 +3,7 @@ import React from 'react';
 
 export default class TodoItems extends React.Component {
 
-  updateItemStatus(e) {
-    e.preventDefault();
+  updateItemStatus() {
     const itemID = this.props.id;
     const noteID = this.props.noteID;
     this.props.updateItemStatus(itemID, noteID);
