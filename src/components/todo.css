@@ -37,6 +37,10 @@
   overflow: scroll;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 .noteHead {
   display: flex;
   justify-content: flex-end;
